@@ -1,0 +1,24 @@
+{
+    "name": "⚡️ Invertigo: Read More, Read Fast",
+    "description": "Read smarter, retain more. Beyond skimming: Supercharge reading on web",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab","tabs","storage","scripting"],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+      },
+      "action": {
+        "default_popup": "popup.html",
+        "default_title":"Ab Bharat karega Read, With Speed!",
+        "default_icon": {
+          "128": "icon128.png"
+        }
+      },
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "icons": {
+        "128": "icon128.png"
+      }
+}

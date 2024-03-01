@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>⚡️ Invertigo: Read More, Read Fast</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333; /* Dark background color */
+      margin: 0;
+      padding: 20px;
+      color: #fff; /* Light text color */
+    }
+    .container {
+      width: 300px;
+      padding: 20px;
+      background-color: #444; /* Darker background color */
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.5s ease forwards, slideIn 0.8s ease forwards; /* Fade-in and slide-in animations */
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h1 {
+      font-size: 24px;
+      color: #fff;
+      margin-top: 0;
+      animation: scaleIn 1s ease forwards; /* Scale-in animation */
+    }
+    @keyframes scaleIn {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+    .content {
+      margin-top: 20px;
+      animation: fadeIn 0.5s ease forwards; /* Fade-in animation */
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      animation: slideIn 1s ease forwards; /* Slide-in animation */
+    }
+    .footer {
+      margin-top: 5px;
+      font-size: 14px;
+      text-align: center;
+      animation: fadeIn 0.5s ease forwards; /* Fade-in animation */
+    }
+    .social {
+      margin-top: 10px;
+    }
+    .social a {
+      display: inline-block;
+      margin: 0 5px;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 20px;
+    }
+    .social a:hover {
+      color: #bbb; /* Lighter color on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>⚡️ Invertigo: Read More, Read Fast</h1>
+    <hr>
+    <div class="content">
+      <p style="font-size: 14px;">Cut through information overload. Invertigo maximizes your reading efficiency and focus.</p>
+      <p style="font-size: 14px;">Reading fatigue? Try Invertigo today.</p>
+      
+      <label class="switch">
+        <input type="checkbox" id="toggleSwitch">
+        <span class="slider"></span>
+      </label>
+
+      <img src="cheetah.png" alt="Extension Image">
+
+    </div>
+    <div class="footer">
+      <div class="social">
+        <a href="https://github.com/shashank404error/invertigo" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> <!-- Font Awesome GitHub Icon -->
+        </a>
+        <a href="https://twitter.com/randomshashank" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter"></i> <!-- Font Awesome Twitter Icon -->
+        </a>
+      </div>
+    </div>
+    <!-- <label class="switch">
+      <input type="checkbox" id="toggleSwitch">
+      <span class="slider"></span>
+    </label> -->
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
